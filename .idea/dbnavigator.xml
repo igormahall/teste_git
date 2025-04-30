@@ -46,7 +46,9 @@ values('fulano', 'fulano@gmail.com', '001245'),
        ('siclano', 'siclano@gmail.com', '003451'),
        ('beltrano', 'beltrano@gmail.com', '001463');
 
-select * from aluno]]></console>
+select nome,matricula from aluno
+where aluno_id in (2,3)
+--where nome = 'beltrano']]></console>
     </connection>
     <connection id="12af46e0-4e10-4e0d-8544-b37bad26a7a1">
       <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table aluno (

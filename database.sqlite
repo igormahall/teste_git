@@ -18,5 +18,5 @@ values('fulano', 'fulano@gmail.com', '001245'),
        ('beltrano', 'beltrano@gmail.com', '001463');
 
 select nome,matricula from aluno
-where aluno_id = 2
+where aluno_id in (2,3)
 --where nome = 'beltrano'

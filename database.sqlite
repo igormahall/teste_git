@@ -17,4 +17,6 @@ values('fulano', 'fulano@gmail.com', '001245'),
        ('siclano', 'siclano@gmail.com', '003451'),
        ('beltrano', 'beltrano@gmail.com', '001463');
 
-select * from aluno
+select nome,matricula from aluno
+where aluno_id = 2
+--where nome = 'beltrano'

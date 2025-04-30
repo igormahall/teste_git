@@ -1,0 +1,20 @@
+-- DDL
+create table aluno (
+aluno_id integer primary key autoincrement,
+nome varchar(255),
+email varchar(255)
+)
+
+-- DDL
+alter table aluno
+add matricula varchar(255)
+
+-- DDL drop table aluno
+
+-- DML
+insert into aluno(nome, email, matricula)
+values('fulano', 'fulano@gmail.com', '001245'),
+       ('siclano', 'siclano@gmail.com', '003451'),
+       ('beltrano', 'beltrano@gmail.com', '001463');
+
+select * from aluno

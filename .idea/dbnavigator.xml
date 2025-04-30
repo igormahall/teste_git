@@ -27,22 +27,26 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="d5d80685-23bc-41d0-8c64-93839433b88d">
-      <console name="database" type="STANDARD" schema="main" session="Main"><![CDATA[--ALTER TABLE aluno
---ADD email VARCHAR(255)
---DROP TABLE aluno
-
+      <console name="database" type="STANDARD" schema="main" session="Main"><![CDATA[-- DDL
 create table aluno (
-aluno_id int primary key,
-nome varchar(63),
-telefone varchar(10)
+aluno_id integer primary key autoincrement,
+nome varchar(255),
+email varchar(255)
 )
 
+-- DDL
+alter table aluno
+add matricula varchar(255)
 
+-- DDL drop table aluno
 
-select * from aluno
+-- DML
+insert into aluno(nome, email, matricula)
+values('fulano', 'fulano@gmail.com', '001245'),
+       ('siclano', 'siclano@gmail.com', '003451'),
+       ('beltrano', 'beltrano@gmail.com', '001463');
 
-
---drop table aluno]]></console>
+select * from aluno]]></console>
     </connection>
     <connection id="12af46e0-4e10-4e0d-8544-b37bad26a7a1">
       <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table aluno (

@@ -44,3 +44,7 @@ values('stefany', 'stefany@gmail.com', '001472', 'feminino', 23)
 select * from aluno
 
 select count(*) from aluno
+
+select sum(idade) from aluno
+
+select avg(idade) from aluno

@@ -64,9 +64,7 @@ telefone varchar(10)
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="d5d80685-23bc-41d0-8c64-93839433b88d" object-ref="consoles/database" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="d5d80685-23bc-41d0-8c64-93839433b88d" />

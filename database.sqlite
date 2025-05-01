@@ -50,4 +50,5 @@ select avg(idade) from aluno
 select max(idade) from aluno
 select min(idade) from aluno
 
-select count(*) from aluno group by genero
+select genero, count(*) from aluno group by genero
+

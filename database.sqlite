@@ -17,18 +17,16 @@ values('fulano', 'fulano@gmail.com', '001245'),
        ('siclano', 'siclano@gmail.com', '003451'),
        ('beltrano', 'beltrano@gmail.com', '001463');
 
-
-
-select * from aluno
-
 select nome,matricula from aluno
 where aluno_id in (2,3)
 --where nome = 'beltrano'
 
 update aluno
-set nome = 'Carlinhos'
+set nome = 'carlinhos'
 where aluno_id = 3
 
+delete from aluno
+where nome = 'fulano'
 
 alter table aluno
 add genero varchar(10)
@@ -42,3 +40,7 @@ where aluno_id in (2,3)
 
 insert into aluno(nome, email, matricula, genero, idade)
 values('stefany', 'stefany@gmail.com', '001472', 'feminino', 23)
+
+select * from aluno
+
+select count(*) from aluno
